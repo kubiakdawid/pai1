@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Kontakt</h1>
+        <p id="subtitle">Strona Dawida :)</p>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="about.html">O autorze</a>
+            <a href="doku.html">Kontakt</a>
+            <a href="zadania.html">Zadania</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formularz kontaktowy</h2>
+
+        <form action="#" method="post">
+            <label>Imię i nazwisko:
+                <input type="text" name="fullname" required>
+            </label>
+
+            <label>Mail:
+                <input type="email" name="email" required>
+            </label>
+
+            <label>Kiedy wystąpił problem:
+                <input type="date" name="date" required>
+            </label>
+
+            <label>Strona internetowa której dotyczy kontakt:
+                <input type="url" name="website">
+            </label>
+
+            <label>W sprawie:
+                <select name="topic" required>
+                    <option value="">Wybierz...</option>
+                    <option value="wyglad">Wygląd strony</option>
+                    <option value="dzialanie">Działanie strony</option>
+                    <option value="formularz">Ten formularz nic nie przekazuje</option>
+                </select>
+            </label>
+
+            <button type="submit">Wyślij</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="kolumny">
+            <div class="kolumna">
+                <h3>O projekcie</h3>
+                <p>By ułatwić sobie życie i usystematyzować pracę w ramach pierwszego zadania powstała ta oto strona.
+                    Znajdą Państwo tutaj w najbliższym czasie informacje o postępach prac. </p>
+            </div>
+            <div class="kolumna">
+                <h3>Linki</h3>
+                <p><a href="https://validator.w3.org/" target="_blank">W3C Validator</a></p>
+                <p><a href="https://developer.mozilla.org/" target="_blank">MDN</a></p>
+            </div>
+            <div class="kolumna">
+                <h3>Autor</h3>
+                <p>Dawid Kubiak</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

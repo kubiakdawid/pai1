@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+}
+
+#subtitle {
+    text-align: center;
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #bfdbfe;
+    font-style: italic;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Wszystkie linki w navie dostaną to formatowanie */
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    background-color: #3b82f6;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #60a5fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px #333333;
+}
+
+/* Tylko pierwszy element wewnątrz nav tzn. pierwszy dostanie bordera */
+nav>a:first-child {
+    border: 2px solid #bfdbfe;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px #cccccc;
+}
+
+main p span {
+    font-weight: bold;
+}
+
+article {
+    border-left: 4px solid #3b82f6;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+article:hover {
+    border-left-width: 8px;
+    padding-left: 15px;
+    background-color: #f0f9ff;
+}
+
+.contener>article:first-child {
+    border-bottom: 2px solid #ff2da7;
+    padding-bottom: 10px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #2563eb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    border: 1px solid #999;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+table th {
+    background-color: #e0e7ff;
+}
+
+table tr:hover td {
+    background-color: #f0f9ff;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 5px #6eb3f6;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px #333333;
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px #555555;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #111827;
+    color: #ccc;
+}
+
+footer .kolumny {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .kolumna {
+    transition: transform 0.3s ease;
+}
+
+footer .kolumna:hover {
+    transform: scale(1.05);
+}
+
+footer h3 {
+    color: #93c5fd;
+}
+
+footer a {
+    color: #93c5fd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #60a5fa;
+}
+
+a[href^="https"] {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    footer .kolumny {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
