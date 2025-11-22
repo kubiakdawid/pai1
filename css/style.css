@@ -33,7 +33,7 @@ nav {
 }
 
 /* Wszystkie linki w navie dostaną to formatowanie */
-nav a {
+nav > a {
     display: inline-block;
     color: white;
     text-decoration: none;
